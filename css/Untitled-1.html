@@ -1,0 +1,50 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Documento sem título</title>
+</head>
+<style>
+
+#expend4 {
+  display:none; 
+}
+
+#expend4 + .smalldesc4 {
+	position: relative;
+  height:5vh;
+  overflow:hidden;
+  transition:all .3s ease;
+background-color: antiquewhite;
+	top: 0;
+
+}
+
+#expend4:checked + .smalldesc4 {
+  height:30vh;  
+	top: -10vh;
+}
+
+label {
+  color:blue;
+  text-decoration:underline;
+  cursor:pointer;
+}
+
+label:hover {
+  text-decoration:none;  
+}
+	</style>
+<body>
+	<div class="service-1 click1">
+		<div>
+			<label for="expend4">
+				<input type="checkbox" id="expend4" />
+				<div class="medium-12 small-12 columns smalldesc4">
+				<p class="font16 ">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+				</div>
+			</label>
+		</div>
+	</div>
+</body>
+</html>
